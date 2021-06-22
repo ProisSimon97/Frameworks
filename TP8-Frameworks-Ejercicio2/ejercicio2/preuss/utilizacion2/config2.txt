@@ -1,0 +1,1 @@
+acciones: preuss.utilizacion2.AccionAgua;preuss.utilizacion2.AccionFuego;preuss.utilizacion2.AccionTierra;preuss.utilizacion2.AccionAire
