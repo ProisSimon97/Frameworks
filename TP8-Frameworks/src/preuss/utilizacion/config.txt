@@ -1,0 +1,1 @@
+acciones: preuss.utilizacion.AccionUno;preuss.utilizacion.AccionDos
