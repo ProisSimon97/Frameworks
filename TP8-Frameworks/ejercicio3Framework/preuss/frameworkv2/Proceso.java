@@ -25,7 +25,7 @@ import com.googlecode.lanterna.terminal.Terminal;
 
 public class Proceso {
 
-	private List<Accion> acciones = new ArrayList<>();
+	private List<Accion> acciones = new ArrayList<Accion>();
 
 	public Proceso(String url) {
 
@@ -79,8 +79,17 @@ public class Proceso {
 					@Override
 					public void run() {
 						// Actions go here
-						new MessageDialogBuilder().setTitle(acciones.get(e).descripcionItemMenu())
-								.setText(acciones.get(e).nombreItemMenu()).build().showDialog(textGUI);
+						try {
+							acciones.get(e).ejecutar();
+
+							new MessageDialogBuilder().setTitle(acciones.get(e).descripcionItemMenu())
+									.setText("Se realizo la ejecucion con exito").build().showDialog(textGUI);
+
+						} catch (Exception ex) {
+
+							new MessageDialogBuilder().setTitle(acciones.get(e).descripcionItemMenu())
+									.setText("Ocurrio un error " + ex.getMessage()).build().showDialog(textGUI);
+						}
 					}
 				}));
 			}

@@ -7,8 +7,8 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="ejercicio2"/>
-	<classpathentry kind="lib" path="ejercicio2/framework.jar"/>
-	<classpathentry kind="lib" path="ejercicio2/framework-v2.jar"/>
 	<classpathentry kind="lib" path="ejercicio2/preuss/utilizacion2/lanterna.jar"/>
+	<classpathentry kind="lib" path="ejercicio2/framework.jar"/>
+	<classpathentry kind="lib" path="ejercicio2/frameworkv2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

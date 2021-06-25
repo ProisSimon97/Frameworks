@@ -7,12 +7,10 @@ import java.util.List;
 import java.util.Properties;
 import java.util.Scanner;
 
-import preuss.frameworkv2.Accion;
-
 public class Proceso {
 
-	private List<Accion> acciones = new ArrayList<>();
-	
+	private List<Accion> acciones = new ArrayList<Accion>();
+
 	public Proceso(String url) {
 
 		Properties prop = new Properties();
@@ -61,13 +59,14 @@ public class Proceso {
 				opcion = scan.nextInt();
 
 				if (opcion > acciones.size() + 1 || opcion == 0) {
-					System.out.println("Valor no valido, el valor a ingresar debe estar en rango de opciones."); //Preguntar
-				}
-				else
+					System.out.println("Valor no valido, el valor a ingresar debe estar en rango de opciones.");
+				} else
+
+				if (opcion != acciones.size() + 1)
 					imprimir(opcion - 1);
 
 			} catch (InputMismatchException e) {
-				
+
 				opcion = 0;
 				System.out.println("Valor no valido, el valor a ingresar debe ser un numero.");
 			}

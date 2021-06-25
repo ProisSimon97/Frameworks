@@ -1,6 +1,6 @@
 package preuss.utilizacion;
 
-import preuss.frameworkv2.Accion;
+import preuss.framework.Accion;
 
 public class AccionUno implements Accion {
 
